@@ -1,0 +1,172 @@
+body {
+    font-family: Tahoma;
+    color: #e6e6e6;
+    text-align: center;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-image: url('images/background.png');
+    padding: 55px 70px 30px 70px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 263px;
+    height: 147px;
+    background-image: url('images/palm-tree.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+.ah_logo {
+    width: 263px;
+    height: 37px;
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+}
+
+.logo p {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.contacts {
+    margin-top: 100px;
+}
+
+.contacts p {
+    font-size: 8px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.contacts p:first-child {
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.screenshot1,
+.screenshot2,
+.screenshot3,
+.screenshot4,
+.screenshot5,
+.screenshot6 {
+    max-width: 270px;
+    height: 200px;
+    margin-bottom: 50px;    
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    width: 270px;
+    height: 188px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image1 {
+    background-image: url(images/ramka.png), url(images/india_photo.png);
+}
+
+.image2 {
+    background-image: url(images/ramka.png), url(images/nepal_photo.png);
+}
+
+.image3 {
+    background-image: url(images/ramka.png), url(images/tibet_photo.png);
+}
+
+.image4 {
+    background-image: url(images/ramka.png), url(images/bhutan_photo.png);
+}
+
+.image5 {
+    background-image: url(images/ramka.png), url(images/sri-lanka_photo.png);
+}
+
+.image6 {
+    background-image: url(images/ramka.png), url(images/maldives_photo.png);
+}
+
+.main p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer p {
+    margin-top: 140px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 966px) {
+    .container {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        justify-content: space-around;
+    }
+
+    .footer p {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .container {
+        background-position: top;
+        background-repeat: repeat-y;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer p {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header {
+        display: block;
+    }
+    
+    .contacts {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        margin-top: 0px;
+    }
+
+    .footer p {
+        margin-top: 0;
+    }
+}
